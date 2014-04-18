@@ -1,0 +1,23 @@
+/* Mobile CSS via link */
+
+body {
+    background: transparent;
+}
+
+#wrapper {
+    width: 100%;
+}
+
+nav li {
+    float: none;
+}
+
+#left, aside {
+    float: none;
+    width: 100%;
+}
+
+#tires, #fire, #flags {
+    display: none;
+    background: none;
+}

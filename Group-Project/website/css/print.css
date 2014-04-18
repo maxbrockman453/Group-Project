@@ -1,0 +1,27 @@
+/* Print CSS */
+
+body, #wrapper, footer {
+    background: transparent;
+}
+
+nav, footer, aside, #tires, #fire, #flags {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h2+p, header h1 {
+    color: black !important; /* fighting with important tag in stylesheet.css */
+}
+
+header {
+    padding: 0;
+}
+
+#left {
+    float: none;
+    width: 100%;
+}

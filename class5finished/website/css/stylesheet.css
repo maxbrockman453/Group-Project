@@ -1,0 +1,380 @@
+@import url(reset.css);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
+
+/* CSS Stylesheet */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 0.7em; /* 16px/16 = 1em */
+    background: transparent;
+}x
+
+#wrapper {
+    width: 100%;
+    margin: 0 auto; /* center wrapper in browser */
+    position: relative; /* new zero point for absolute positioned elements */
+    background: black; 
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif !important;
+    font-weight: 700;
+    font-size: 4em; /* 64px/16 = 4em */
+    -webkit-text-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+    -moz-text-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+    -ms-text-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+    text-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+    color: white !important;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+figcaption {
+    padding: 0.5em 2.5em;
+    font-style: italic;
+    color: #555;
+    background: #ddd;
+}
+
+nav {
+    background-color: green;
+}
+
+nav li {
+    float: none; /* makes a horizontal nav */
+}
+
+nav li a {
+    text-decoration: none; /* turn off underlines */
+    color: white;
+    background-color: green;
+    padding: 5px 20px; /* tb - lr */
+    border-right: 1px solid white;
+    -webkit-transition: background-color 300ms linear 0;
+    -moz-transition: background-color 300ms linear 0;
+    -ms-transition: background-color 300ms linear 0;
+    transition: background-color 300ms linear 0;
+}
+
+nav li a:hover {
+    background-color: orange;
+    -webkit-transition: background-color 300ms linear 0;
+    -moz-transition: background-color 300ms linear 0;
+    -ms-transition: background-color 300ms linear 0;
+    transition: background-color 300ms linear 0;
+}
+
+nav li a:active {
+    background-color: red;
+}
+
+header {
+    padding: 1.25em 2.5em;
+}
+
+nav li:last-child a {
+    background-color: orange;
+    border-right: none;
+}
+
+/* dropdown menu */
+
+#nav a {
+	display: block;
+	width: 150px;
+	}
+	
+#nav li {
+ 	float: left;
+ 	position: relative;
+ 	}
+ 	
+ #nav ul {
+ 	position: absolute;
+ 	}
+ 	
+ #nav ul ul {
+ 	position: absolute;
+ 	top: 0;
+ 	left: 180px; /* positions flyout menu */
+ 	z-index: 100;
+ }
+
+/* primary level menu */
+
+#nav li a:link, #nav li a:visited {
+	background-color: blue;
+	color: white;
+}
+
+#nav li a:hover {
+	background-color: green;
+	color: yellow;
+}
+
+#nav li a:active {
+	background-color: red;
+	color: yellow;
+	}
+
+/* secondary level menu */
+
+#nav ul a:link, #nav ul a:visited {
+	background-color: red;
+	color: yellow;
+}
+
+#nav ul a:hover {
+	background-color: orange;
+	color: white;
+}
+
+#nav ul a:active {
+	background-color: purple;
+	color: yellow
+}
+
+/* tertiary level menu */
+
+#nav ul ul a:link, #nav ul ul a:visited {
+	background-color: black;
+	color: gray;
+}
+
+#nav ul ul a:hover {
+	background-color: pink;
+	color: yellow;
+}
+
+#nav ul ul a:active {
+	background-color: green;
+	color: red;
+}
+
+
+/* end dropdown menu */
+
+section {
+    background-color: white;
+}
+
+section h1 {
+    font-size: 2em; /* 48px/16= 3em */
+    padding: 1.25em;
+    color: black !important;
+}
+
+section section header {
+    padding: 0;
+}
+
+section section h1 {
+    font-size: 1.5em; /* 32px/16 =2em */
+    padding: 0;
+}
+
+section section h1:first-letter {
+    display: block;
+    font-size: 2.5em;
+    background: black url(../images/metal.jpg) no-repeat center center scroll;
+    color: white;
+    padding: 0.1em 0.3em;
+    border: 1px solid green;
+    text-shadow: 0px 0px 7px black;
+    border-radius: 10px;
+    float: left;
+    margin: 0 10px 10px 0; /* t r b l */
+}
+
+section p {
+    line-height: 1.5em; /*24px/16= 1.5em */ 
+    margin-bottom: 0.5em; /* 8px/16= 0.5 */
+}
+
+section figure img {
+    width: 100%;
+}
+
+section section {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 2.5em;
+}
+
+section footer {
+    background: none;
+    height: auto;
+}
+
+/* Gallery CSS */
+
+ul.gallery li {
+	float: left;
+	list-style: none;
+	}
+
+ul.gallery img {
+	width: 250px;
+	padding: 10px;
+	border: 2px solid gray;
+	background-color: white;
+	margin: 5px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	/* 2d */
+	-webkit-transition: all 200ms;
+	-moz-transition: all 200ms;
+	-ms-transition: all 200ms;
+	transition: all 200ms;
+	/* 3d */
+	/* set transform style for 3d object */
+	-webkit-transform-style: flat;
+	-moz-transform-style: flat;
+	transform-style: flat;
+	/* set perspective (universe) */
+	-webkit-perspective: 120;
+	-moz-perspective: 120;
+	perspective: 120;
+	}
+
+ul.gallery a:hover img {
+	position: relative;
+	z-index: 100;
+	
+    -webkit-box-shadow: 0 0 5px blue;
+    -moz-box-shadow: 0 0 5px blue;
+    -ms-box-shadow: 0 0 5px blue;
+    box-shadow: 0 0 5px blue;
+    /* 2d - what we want to do */
+    -webkit-transform: scale(2) rotate(355deg);
+    -moz-transform: scale(2) rotate(355deg);
+    -ms-transform: scale(2) rotate(355deg);
+    transform: scale(2) rotate(355deg);
+    /* 2d - how we want to get there */
+    -webkit-transition: -webkit-transform 0.8s ease-in-out 0, box-shadow 2s ease-in 0;
+    -moz-transition: -moz-transform 0.8s ease-in-out 0, box-shadow 2s ease-in 0;
+    -ms-transition: -ms-transform 0.8s ease-in-out 0, box-shadow 2s ease-in 0;
+    transition: transform 0.8s ease-in-out 0, box-shadow 2s ease-in 0;
+}
+
+ul.gallery a:active img {
+	border: 2px solid white;
+	background-color: gray;
+	}
+
+ul.gallery.threed a:hover img {
+	/*3d - what we want to do */
+	-webkit-transform: scale3d(3,3,3) rotate3d(1,1,1,720deg);
+	-moz-transform: scale3d(3,3,3) rotate3d(1,1,1,720deg);
+	transform: scale3d(3,3,3) rotate3d(1,1,1,720deg);
+	/*3d - how we want to get there */
+	
+}
+
+aside {
+    color: white;
+    padding: 2.5em;
+}
+
+footer {
+    background: transparent url(../images/cautionstripes.jpg) repeat-x bottom center scroll;
+    height: 10em;
+    clear: both;
+    padding: 2.5em;
+    color: white;
+}
+
+/* selectors */
+
+h2+p {
+    color: red;
+}
+
+article p:first-child {
+    font-weight: bold;
+}
+
+article p:first-line {
+    font-style: italic;
+}
+
+/* tablet size */
+@media screen and (min-width: 600px) {
+
+	body {
+		font-size: 0.85em;
+		}
+		
+    nav li {
+        float: left;
+    }
+    
+}
+
+/* desktop */
+@media screen and (min-width: 1025px) {
+
+    body {
+    	font-size: 1em;
+    	background: black url(../images/desertroad.jpg) no-repeat top center fixed;
+    }
+    
+    #wrapper {
+        width: 60em;
+        background: black url(../images/leather.jpg) repeat top center scroll;
+    }
+    
+    #left {
+        float: left;
+        width: 60%;
+    }
+    
+    #aside {
+    	float: right;
+    	width: 30%;
+    	}
+
+/* positioned elements */
+
+#tires {
+    width: 230px;
+    height: 295px;
+    background: transparent url(../images/tires.png) no-repeat center center scroll;
+    background-size: 75% 75%; /* 3/4 x, 3/4 y */
+    position: absolute; /* remove from layout */
+    bottom: 0;
+    right: 0;
+    z-index: 5;    
+}
+
+#fire {
+    width: 175px;
+    height: 255px;
+    background: transparent url(../images/fire.png) no-repeat center center scroll;
+    background-size: contain;
+    position: absolute;
+    right: 25px;
+    bottom: 200px;
+    z-index: 3;
+}
+
+.flags {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 7;
+    -webkit-transform: rotate(75deg) scale(0.5);
+    -moz-transform: rotate(75deg) scale(0.5);
+    -ms-transform: rotate(75deg) scale(0.5);
+    transform: rotate(75deg) scale(0.5);
+}
+    
+}
+
+
+

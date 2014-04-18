@@ -1,0 +1,10 @@
+/* CSS Overrides */
+
+h1 {
+    font-family: 'Open Sans', sans-serif !important;
+    color: orange !important;
+}
+
+section h1 {
+    color: pink !important;
+}
